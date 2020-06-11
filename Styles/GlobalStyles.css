@@ -14,8 +14,9 @@ header {
 }
 
 .Logo {
-    width: 64px;
-    height: 64px;
+	margin-top: 5px;
+    width: 155px;
+    height: 60px;
 }
 
 .top_bar {
