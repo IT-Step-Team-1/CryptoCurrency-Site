@@ -1,6 +1,136 @@
-body {
-    margin: 0px;
+
+/* Start Content_1 */
+
+.Content_1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(3, 6, 44);
+    height: 700px;
 }
+
+.C1_Block_1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.C1_Block1_text_1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Montserrat-Medium";
+    width: 400px;
+    margin: 0px;
+    padding-top: 150px;
+}
+
+.C1_Block1_text_2 {
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat-Light";
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.C1_Block1_button {
+    color: white;
+    font-family: "Raleway-Medium";
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    background-color: rgb(0, 122, 250);
+    padding: 10px 25px 10px 25px;
+    margin-top: 30px;
+}
+
+.C1_Block_2 {
+    margin-top: 110px;
+    height: 390px;
+    width: 330px;
+    min-width: 330px;
+    background-image: -moz-linear-gradient( 135deg, rgb(3,6,44) 0%, rgb(13,19,89) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgb(3,6,44) 0%, rgb(13,19,89) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgb(3,6,44) 0%, rgb(13,19,89) 100%);
+    float: right;
+}
+
+.C1_Block2_h2_1 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: "Montserrat-Regular";
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.C1_Block2_hr {
+    width: 110px;
+}
+
+.C1_Block2_h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: "Montserrat-Medium";
+    margin-bottom: 0px;
+}
+
+.C1_Block2_text_1 {
+    color: rgb(0, 122, 250);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    text-align: center;
+    margin-top: 0px;
+}
+
+.C1_mini_block_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.C1_micro_block_1 {
+    float: left;
+    width: 163px;
+    height: 80px;
+    background-color: rgb(16, 23, 105);
+}
+
+.C1_micro_block_2 {
+    float: right;
+    width: 163px;
+    height: 80px;
+    background-color: rgb(16, 23, 105);
+}
+
+.C1_micro_block1_h2 {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Montserrat-Medium";
+    font-size: 22px;
+    color: white;
+    margin: 0px;
+    margin-top: 13px;
+}
+
+.C1_micro_block1_p {
+    margin-top: 7px;
+    color: rgb(0, 122, 250);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Raleway-Regular";
+    text-align: center;
+}
+
+/* End Content_1 */
+
+/* Start Content_3 */
 
 .Content_3 {
     padding-left: 20%;
@@ -66,15 +196,5 @@ body {
     margin-top: 100px;
 }
 
-  
-
-
-
-
-
-
-
-
-
-
+/* End Content_3 */
 

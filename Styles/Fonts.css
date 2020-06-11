@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../Fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../Fonts/Raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../Fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../Fonts/Montserrat/Montserrat-Light.ttf");
+}
