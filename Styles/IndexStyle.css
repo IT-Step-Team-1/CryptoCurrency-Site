@@ -140,7 +140,7 @@
 }
 
 .C3_Block1_h1 {
-    font-family: "";
+    font-family: "Montserrat-Light";
     font-weight: 400;
     font-size: 38px;
     color: white;
@@ -151,7 +151,7 @@
 }
 
 .C3_Block1_text {
-    font-family: "";
+    font-family: "Montserrat-Light";
     font-weight: 400;
     font-size: 25px;
     color: white;
@@ -174,12 +174,17 @@
     border-top: 1px solid #ffffff;
     font-size: 25px;
     font-weight: 400;
-    font-family: "";
+    font-family: "Montserrat-Medium";
     text-align: center;
     color: #ffffff;
     width: 140px;
     height: 90px;
     background-color:#050038;
+}
+
+.C3_mini_Block2_p {
+    font-family: "Raleway-Light";
+    font-size: 20px;
 }
 
 .C3_button {
@@ -189,8 +194,8 @@
     color: white;
     font-weight: 400;
     font-size: 16px;
-    font-family: "";
-    padding: 8px 25px 8px 25px;
+    font-family: "Raleway-Medium";
+    padding: 10px 30px 10px 30px;
     text-align: center;
     margin: auto;
     margin-top: 100px;

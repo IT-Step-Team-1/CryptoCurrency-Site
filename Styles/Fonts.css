@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: "Raleway-Light";
+    src: url("../Fonts/Raleway/Raleway-Light.ttf");
+}
+
+@font-face {
     font-family: "Montserrat-Regular";
     src: url("../Fonts/Montserrat/Montserrat-Regular.ttf");
 }
