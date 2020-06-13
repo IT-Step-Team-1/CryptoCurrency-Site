@@ -29,7 +29,6 @@
                     <a class="nav_item" href="#">Contract</a>
                     <a class="nav_item" href="#">Technology</a> 
                     <a class="nav_item" href="#">Contact us</a>
-                    <a class="nav_item" href="#">Buy token</a>
                 </nav>
             </div>
             <!-- TradingView Widget BEGIN -->
@@ -122,7 +121,6 @@
                 <a class="Footer_nav_item" href="#">Contract</a>
                 <a class="Footer_nav_item" href="#">Technology</a> 
                 <a class="Footer_nav_item" href="#">Contact us</a>
-                <a class="Footer_nav_item" href="#">Buy token</a>
             </div>
             <hr class="Footer_line">
 
@@ -147,10 +145,10 @@
                 <div class="Footer_mini_block_3">
                     <h1 class="Footer_mini_block2_h1_1">Leave us a message</h1>
                     <p class="Footer_mini_block3_p_1">You can leave us a message with an offer and we will contact you via email</p>
-                    <form action="post">
-                        <input class="Footer_mini_block3_input" type="email" placeholder="Your email here">
+                    <form method="POST" action="Leave_message.php">
+                        <input class="Footer_mini_block3_input" name="email" maxlength="50" type="email" placeholder="Your email here">
                         <br>
-                        <input class="Footer_mini_block3_input" type="text" placeholder="Your message here">
+                        <input class="Footer_mini_block3_input" name="message" maxlength="500" type="text" placeholder="Your message here">
                         <br>
                         <button class="Footer_mini_block3_button" type="submit">Send</button>
                     </form>
