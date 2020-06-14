@@ -65,6 +65,37 @@ nav {
 
 /* End Header */
 
+
+/* Start Page_title */
+
+
+.Page_title {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(2, 25, 75);
+    height: 140px;
+}
+
+.Page_title_h2 {
+    margin: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 27px;
+    font-family: "Montserrat-Regular";
+    padding-top: 35px;
+}
+
+.Page_title_p {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+}
+
+
+/* End Page_title */
+
+
 /* Start Footer */
 
 Footer {

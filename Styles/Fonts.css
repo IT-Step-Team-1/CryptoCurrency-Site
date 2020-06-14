@@ -28,3 +28,8 @@
     font-family: "Montserrat-Light";
     src: url("../Fonts/Montserrat/Montserrat-Light.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat-Thin";
+    src: url("../Fonts/Montserrat/Montserrat-Thin.ttf");
+}
