@@ -38,15 +38,15 @@ $Max_ID = $result->fetch_assoc();
                 <div class="top_bar_left_block">
                     <a class="top_bar_item" href="#">BUY TOKEN</a>
                     <p class="top_bar_item">|</p>
-                    <a class="top_bar_item" href="#">GET A FREE WALLET</a>
+                    <a class="top_bar_item" target="_blank" href="https://metamask.io/">GET A FREE WALLET</a>
                 </div>
             </div>
             <div class="middle_bar">
-                <img class="Logo" src="Images/Logo.png" alt="">
+                <a href="Index.html"><img class="Logo" src="Images/Logo.png" alt="Logo"></a>
                 <nav>
                     <a class="nav_item" href="Index.html">Home</a>
-                    <a class="nav_item" href="#">Contract</a>
-                    <a class="nav_item" href="#">Technology</a> 
+                    <a class="nav_item" target="_blank" href="https://etherscan.io/address/0x7ef76f1c14fb8ccaabe8189890fad00bee541f55">Contract</a>
+                    <a class="nav_item" href="Technology.html">Technology</a>
                     <a class="nav_item" href="Contact_Us.html">Contact us</a>
                 </nav>
             </div>
@@ -82,8 +82,8 @@ $Max_ID = $result->fetch_assoc();
         <footer>
             <div class="Footer_nav">
                 <a class="Footer_nav_item" href="Index.html">Home</a>
-                <a class="Footer_nav_item" href="#">Contract</a>
-                <a class="Footer_nav_item" href="#">Technology</a> 
+                <a class="Footer_nav_item" target="_blank" href="https://etherscan.io/address/0x7ef76f1c14fb8ccaabe8189890fad00bee541f55">Contract</a>
+                <a class="Footer_nav_item" href="Technology.html">Technology</a>
                 <a class="Footer_nav_item" href="Contact_Us.html">Contact us</a>
             </div>
             <hr class="Footer_line">
