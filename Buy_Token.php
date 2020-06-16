@@ -23,6 +23,7 @@ $Max_ID = $result->fetch_assoc();
         <title>Imovi | Buy Token</title>
 
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
     
         <link rel="stylesheet" href="Styles/Fonts.css">
         <link rel="stylesheet" href="Styles/AdaptiveStyles.css">
