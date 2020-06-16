@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <link rel="shortcut icon" href="Images/Icon.png" type="image/x-icon">
         <script src="https://kit.fontawesome.com/d90820cc16.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
       <header>
@@ -42,7 +43,7 @@
         <div class="Content_1">
             <div class="C1_Block_1">
                 <p class="C1_Block1_text_1">Today, many people have chosen <a>Ethereum</a> as a payment method.</p>
-                <p class="C1_Block1_text_2">Now its price is <a>$220</a>.</p>
+                <p class="C1_Block1_text_2">Now its price is <a id="ETH">$220</a>.</p>
                 <button class="C1_Block1_button" type="button" onClick='location.href="Buy_Token.php"'>Buy Token</button>
             </div>
             <div class="C1_Block_2">
@@ -52,12 +53,12 @@
                 <p class="C1_Block2_text_1">IMOV Token Units</p>
                 <div class="C1_mini_block_1">
                     <div class="C1_micro_block_1">
-                        <h2 class="C1_micro_block1_h2">4 166 666</h2>
+                        <h2 class="C1_micro_block1_h2" id="ETH_Price">4 166 666</h2>
                         <p class="C1_micro_block1_p">Price in ETH</p>
                     </div>
                     <div class="C1_micro_block_2">
-                        <h2 class="C1_micro_block1_h2">37 037 037</h2>
-                        <p class="C1_micro_block1_p">Price in USD</p>
+                        <h2 class="C1_micro_block1_h2" id="BTC_Price">1 000 000 000</h2>
+                        <p class="C1_micro_block1_p">Price in BTC</p>
                     </div>
                 </div>
             </div>
