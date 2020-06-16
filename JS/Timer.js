@@ -39,5 +39,5 @@ function getTimeRemaining(endtime) {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-   var deadline = '2020-06-30';
+   var deadline = '2020-10-01';
    initializeClock("Timer", deadline);

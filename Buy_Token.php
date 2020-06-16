@@ -91,7 +91,7 @@ $Max_ID = $result->fetch_assoc();
             <div class="Footer_block">
                 <div class="Footer_mini_block">
                     <h1 class="Footer_mini_block_h1_1">About Imovi</h1>
-                    <p class="Footer_mini_block_p_1">Mea ad quem platonem persequeris, mazim democritum at vis. Eu e</p>
+                    <p class="Footer_mini_block_p_1">This token is created for secure and fast transactions</p>
                     <img src="Images/World-Map-PNG-Photos.png" alt="World-map">
                 </div>
                 <div class="Footer_mini_block_2">
@@ -107,7 +107,7 @@ $Max_ID = $result->fetch_assoc();
                     </div>
                 </div>
                 <div class="Footer_mini_block_3">
-                    <h1 class="Footer_mini_block2_h1_1">Leave us a message</h1>
+                    <h1 class="Footer_mini_block2_h1_1">Drop us a message</h1>
                     <p class="Footer_mini_block3_p_1">You can leave us a message with an offer and we will contact you via email</p>
                     <form method="POST" action="Leave_message.php">
                         <input class="Footer_mini_block3_input" name="email" maxlength="50" type="email" placeholder="Your email here">
