@@ -1,13 +1,32 @@
+<?php
+
+require "API/Config.php";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT MAX(ID) FROM Transactions";
+
+$result = $conn->query($sql);
+
+
+$Max_ID = $result->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Imovi | Contact us</title>
+        <title>Imovi | Buy Token</title>
 
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     
         <link rel="stylesheet" href="Styles/Fonts.css">
         <link rel="stylesheet" href="Styles/AdaptiveStyles.css">
-        <link rel="stylesheet" href="Styles/ContactUs.css">
+        <link rel="stylesheet" href="Styles/BuyToken.css">
         <link rel="stylesheet" href="Styles/GlobalStyles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <link rel="shortcut icon" href="Images/Icon.png" type="image/x-icon">
@@ -17,7 +36,7 @@
         <header>
             <div class="top_bar">
                 <div class="top_bar_left_block">
-                    <a class="top_bar_item" href="Buy_Token.php">BUY TOKEN</a>
+                    <a class="top_bar_item" href="#">BUY TOKEN</a>
                     <p class="top_bar_item">|</p>
                     <a class="top_bar_item" href="#">GET A FREE WALLET</a>
                 </div>
@@ -27,8 +46,8 @@
                 <nav>
                     <a class="nav_item" href="Index.html">Home</a>
                     <a class="nav_item" href="#">Contract</a>
-                    <a class="nav_item" href="Technology.html">How it works</a> 
-                    <a class="nav_item now_item" href="#">Contact us</a>
+                    <a class="nav_item" href="#">Technology</a> 
+                    <a class="nav_item" href="Contact_Us.html">Contact us</a>
                 </nav>
             </div>
             <!-- TradingView Widget BEGIN -->
@@ -40,44 +59,23 @@
         </header>
 
         <div class="Page_title">
-            <h2 class="Page_title_h2">Contact us</h2>
-            <p class="Page_title_p"><a href="Index.html" class="Page_title_a">Home</a> > Contact us</p>
+            <h2 class="Page_title_h2">Buy Token</h2>
+            <p class="Page_title_p"><a href="Index.html" class="Page_title_a">Home</a> > Buy Token</p>
         </div>
 
         <div class="Content_1">
-            <h1 class="C1_Title">We are here to Serve you</h1>
-            <p class="C1_subTitle">Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-            <div class="C1_Block_1">
-                <div class="C1_mini_Block_1">
-                    <p class="C1_mini_Block1_icon"><i class="fas fa-map-marked-alt"></i></p>
-                    <h2 class="C1_mini_Block1_h2">Our Location</h2>
-                    <p class="C1_mini_Block1_p">Lviv,</p>
-                    <p class="C1_mini_Block1_p">Ukraine</p>
-                </div>
-                <div class="C1_mini_Block_2">
-                    <p class="C1_mini_Block1_icon"><i class="fas fa-envelope"></i></p>
-                    <h2 class="C1_mini_Block1_h2">Web & Mail</h2>
-                    <p class="C1_mini_Block1_p">SupportImoviToken@gmail.com</p>
-                    <p class="C1_mini_Block1_p">ImoviToken@gmail.com</p>
-                </div>
-                <div class="C1_mini_Block_2">
-                    <p class="C1_mini_Block1_icon"><i class="fas fa-phone-alt"></i></p>
-                    <h2 class="C1_mini_Block1_h2">Voice Calls</h2>
-                    <p class="C1_mini_Block1_p">0(00) 809-3-614 </p>
-                    <p class="C1_mini_Block1_p">0(00) 809-3-615</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="Content_2">
-            <h1 class="C2_Title">Drop Us a Message</h1>
-            <p class="C2_subTitle">Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-            <form class="C2_form" method="POST" action="Leave_message.php">
-                <input class="C2_input" type="email" name="email" maxlength="50" placeholder="Your Email*">
+            <h1 class="C1_Title">Buy Token</h1>
+            <p class="C1_subTitle">In this form you can buy Imovi tokens whose price is equal to 1 hryvnia per piece.</p>
+            <form class="C1_form" method="POST" id="payment" action="https://sci.interkassa.com/" enctype="UTF-8">
+                <input class="C1_input" type="text" maxlength="42" name="ik_x_Address" placeholder="Your Ethereum Address: 0x6ace58eCa55522...">
                 <br>
-                <input class="C2_input" type="text" name="message" maxlength="500" placeholder="Your Message*">
+                <input class="C1_input" type="text" name="ik_am" placeholder="Number of tokens IMOV: 1000">
                 <br>
-                <button class="C2_button" type="submit">Send now</button>
+                <input type="hidden" name="ik_co_id" value="5ee3ef941ae1bd24008b456b">
+                <input type="hidden" name="ik_pm_no" value="<?php echo($Max_ID["ID"]); ?>">
+                <input type="hidden" name="ik_cur" value="980">
+                <input type="hidden" name="ik_desc" value="">
+                    <button class="C1_button" type="submit">Buy</button>
             </form>
         </div>
 
@@ -85,11 +83,11 @@
             <div class="Footer_nav">
                 <a class="Footer_nav_item" href="Index.html">Home</a>
                 <a class="Footer_nav_item" href="#">Contract</a>
-                <a class="Footer_nav_item" href="Technology.html">How it works</a> 
-                <a class="Footer_nav_item Footer_now_item" href="#">Contact us</a>
+                <a class="Footer_nav_item" href="#">Technology</a> 
+                <a class="Footer_nav_item" href="Contact_Us.html">Contact us</a>
             </div>
             <hr class="Footer_line">
-    
+
             <div class="Footer_block">
                 <div class="Footer_mini_block">
                     <h1 class="Footer_mini_block_h1_1">About Imovi</h1>
@@ -121,9 +119,8 @@
                 </div>
             </div>
         </footer>
-            <dir class="Footer_copyright_bar">
-                <p class="Copyright"><i class="far fa-copyright"></i> 2020 ImoviToken. All Rights Reserved </p>
-            </dir>
-
+        <dir class="Footer_copyright_bar">
+            <p class="Copyright"><i class="far fa-copyright"></i> 2020 ImoviToken. All Rights Reserved </p>
+        </dir>
     </body>
 </html>
