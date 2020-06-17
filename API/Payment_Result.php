@@ -7,7 +7,11 @@ $dataSet    = $_POST;
 $key        = "PRvAz8tXgpk77dzz";
 
 if (!$dataSet) {
-    exit("Error Payment Data");
+    die("Error Payment Data");
+}
+
+if ($dataSet["ik_inv_st"] === "fail") {
+    die("Error Status");
 }
 
 unset($dataSet["ik_sign"]);
@@ -30,10 +34,11 @@ if ($conn->connect_error) {
 
 
 $eth_address    = $_POST["ik_x_Address"];
-$value          = floor($_POST["ik_am"]);
+$value          = $_POST["ik_x_Tokens"];
+$p_id           = $_POST["ik_pm_no"];
 
 
-$sql = "INSERT INTO Transactions (ETH_Address, Value, Status) VALUES ('{$eth_address}', '{$value}', '0')";
+$sql = "INSERT INTO Transactions (ETH_Address, Value, Status, Payment_ID) VALUES ('{$eth_address}', '{$value}', '0', {$p_id})";
 
 
 if ($conn->query($sql) === TRUE) {

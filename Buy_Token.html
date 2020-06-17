@@ -1,22 +1,3 @@
-<?php
-
-require "API/Config.php";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT MAX(ID) FROM Transactions";
-
-$result = $conn->query($sql);
-
-
-$Max_ID = $result->fetch_assoc();
-
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -66,17 +47,13 @@ $Max_ID = $result->fetch_assoc();
 
         <div class="Content_1">
             <h1 class="C1_Title">Buy Token</h1>
-            <p class="C1_subTitle">In this form you can buy Imovi tokens whose price is equal to 1 hryvnia per piece.</p>
-            <form class="C1_form" method="POST" id="payment" action="https://sci.interkassa.com/" enctype="UTF-8">
+            <p class="C1_subTitle">In this form you can buy Imovi tokens whose price is equal to 1$ per piece.</p>
+            <form class="C1_form" method="POST" action="API/Payment_Creator.php">
                 <input class="C1_input" type="text" maxlength="42" name="ik_x_Address" placeholder="Your Ethereum Address: 0x6ace58eCa55522...">
                 <br>
-                <input class="C1_input" type="text" name="ik_am" placeholder="Number of tokens IMOV: 1000">
+                <input class="C1_input" type="text" name="ik_x_Tokens" placeholder="Number of tokens IMOV: 1000">
                 <br>
-                <input type="hidden" name="ik_co_id" value="5ee3ef941ae1bd24008b456b">
-                <input type="hidden" name="ik_pm_no" value="<?php echo($Max_ID["ID"]); ?>">
-                <input type="hidden" name="ik_cur" value="980">
-                <input type="hidden" name="ik_desc" value="">
-                    <button class="C1_button" type="submit">Buy</button>
+                <button class="C1_button" type="submit">Buy</button>
             </form>
         </div>
 
