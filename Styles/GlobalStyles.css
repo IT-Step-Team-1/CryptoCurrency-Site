@@ -1,0 +1,254 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: #007afa;
+}
+
+/* Start Header */
+
+header {
+    width: 100%;
+}
+
+.Logo {
+	margin-top: 5px;
+    width: 155px;
+    height: 60px;
+}
+
+.top_bar {
+    background-color: rgb(58, 67, 250);
+    height: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.top_bar_item {
+    color: rgb(205, 214, 255);
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    float: left;
+}
+
+.middle_bar {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-top: 25px;
+}
+
+.nav_item {
+    color: #181818;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway-Medium";
+    margin-left: 20px;
+}
+
+.now_item {
+    color: #3a43fa;
+}
+
+/* End Header */
+
+
+/* Start Page_title */
+
+
+.Page_title {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(2, 25, 75);
+    height: 140px;
+}
+
+.Page_title_h2 {
+    margin: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 27px;
+    font-family: "Montserrat-Regular";
+    padding-top: 35px;
+}
+
+.Page_title_p {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+}
+
+
+/* End Page_title */
+
+
+/* Start Footer */
+
+Footer {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(11, 34, 84);
+    height: 570px;
+}
+
+.Footer_nav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.Footer_nav_item {
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    font-size: 18px;
+    color: rgb(205, 214, 255);
+    margin-right: 30px;
+}
+
+.Footer_now_item {
+    color: #007afa;
+}
+
+.Footer_line {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.141;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Footer_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_mini_block_h1_1 {
+    font-size: 24px;
+    font-family: "Montserrat-Medium";
+    font-weight: 400;
+    color: white;
+    margin-top: 60px;
+}
+
+.Footer_mini_block_p_1 {
+    color: rgb(205, 214, 255);
+    line-height: 1.625;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    width: 270px;
+    margin-top: 30px;
+}
+
+.Footer_mini_block2_h1_1 {
+    font-size: 24px;
+    font-family: "Montserrat-Medium";
+    font-weight: 400;
+    color: white;
+    margin-top: 60px;
+}
+
+.Footer_mini_block2_p_1 {
+    color: rgb(205, 214, 255);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    margin-top: 30px;
+}
+
+.zmdi-pin {
+    color: white;
+    margin-right: 10px;
+}
+
+.zmdi-email {
+    color: white;
+    margin-right: 10px;
+}
+
+.zmdi-phone {
+    color: white;
+    margin-right: 10px;
+}
+
+.fab {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 35px;
+    color: white;
+}
+
+.Footer_mini_block3_p_1 {
+    color: rgb(205, 214, 255);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    margin-top: 30px;
+    width: 250px;
+}
+
+.Footer_mini_block3_input {
+    border: 1px solid white;
+    background-color: rgba(205, 214, 255, 0);
+    width: 220px;
+    height: 40px;
+    margin-top: 15px;
+    font-family: "Raleway-Regular";
+    font-weight: 400px;
+    font-size: 12px;
+    color: white;
+}
+
+.Footer_mini_block3_input::placeholder {
+    font-family: "Raleway-Regular";
+    font-weight: 400px;
+    font-size: 14px;
+    color: rgb(205, 214, 255);
+    padding-left: 20px;
+}
+
+.Footer_mini_block3_button {
+    border: none;
+    background-color: rgb(0, 122, 250);
+    color: rgb(205, 214, 255);
+    text-align: center;
+    font-weight: 400;
+    font-family: "Raleway-Regular";
+    font-size: 14px;
+    padding: 10px 40px 10px 40px;
+    margin-top: 15px;
+}
+
+.Footer_copyright_bar {
+    height: 50px;
+    background-color: rgb(0, 55, 155);
+    margin: 0px;
+}
+
+.Copyright {
+    margin: 0px;
+    text-align: center;
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding-top: 15px;
+}
+
+/* End Footer */
